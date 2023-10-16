@@ -26,7 +26,7 @@ app.get('/movies', (req, res) => {
     }
 });
 
-app.get('/moviesCompanies', (req, res) => {
+app.get('/movieCompanies', (req, res) => {
     res.header({'access-control-allow-origin': '*'});
     if (Math.random() < 0.8) { 
         res.status(200);
