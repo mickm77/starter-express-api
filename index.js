@@ -39,6 +39,7 @@ app.get('/movieCompanies', (req, res) => {
 
 app.post('/submitReview', (req, res) => {
     res.header({'access-control-allow-origin': '*'});
+    res.header({'content-type': 'application/json'});
     res.status(200);
     res.send({ message: "Thank you for your review!"})
 
