@@ -1,6 +1,6 @@
 Optix UI tech test server
 
 Run by
-npm install
-npm start
+ - npm install
+ - npm start
 
