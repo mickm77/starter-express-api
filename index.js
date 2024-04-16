@@ -1,7 +1,12 @@
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 
-const express = require('express');
-const cors = require('cors');
+// const express = require('express');
+// const cors = require('cors');
+
+import express from 'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import serverless from "serverless-http";
 
 const app = express()
 app.use(cors());
@@ -191,3 +196,4 @@ app.post('/reviews', (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000);
+export const handler = serverless(app);
